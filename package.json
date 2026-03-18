@@ -1,0 +1,63 @@
+{
+  "name": "shein-shopping",
+  "version": "2.0.0",
+  "description": "Shop SHEIN with browser automation for trend search, style discovery, price comparison, cart operations, and deal tracking",
+  "main": "SKILL.md",
+  "keywords": [
+    "shein",
+    "shopping",
+    "fashion",
+    "browser-automation",
+    "ecommerce",
+    "fast-fashion",
+    "openclaw-skill"
+  ],
+  "author": "harrylabsj",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harrylabsj/shein-shopping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harrylabsj/shein-shopping/issues"
+  },
+  "homepage": "https://github.com/harrylabsj/shein-shopping#readme",
+  "openclaw": {
+    "skill": {
+      "name": "shein-shopping",
+      "version": "2.0.0",
+      "description": "Shop SHEIN with browser automation for trend search, style discovery, price comparison, cart operations, and deal tracking. Supports logged-in workflows for browsing, adding to cart, checking flash sale prices, and order preview while keeping checkout/payment for user control.",
+      "category": "shopping",
+      "capabilities": [
+        "browser-automation",
+        "search",
+        "cart-operations",
+        "price-comparison",
+        "decision-support",
+        "python-runtime"
+      ],
+      "auth": {
+        "required": false,
+        "optionalFor": [
+          "search",
+          "browse",
+          "compare"
+        ],
+        "requiredFor": [
+          "add-to-cart",
+          "view-cart",
+          "apply-coupons",
+          "generate-order-preview"
+        ]
+      },
+      "safety": {
+        "userControlledPayment": true,
+        "agentStopsBeforePayment": true,
+        "noPaymentDataStorage": true
+      }
+    }
+  },
+  "engines": {
+    "openclaw": ">=1.0.0"
+  }
+}

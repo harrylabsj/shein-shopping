@@ -1,0 +1,48 @@
+{
+  "name": "shein-shopping",
+  "version": "2.0.0",
+  "description": "Shop SHEIN with browser automation for trend search, style discovery, price comparison, cart operations, and deal tracking",
+  "author": "harrylabsj",
+  "license": "MIT",
+  "repository": "https://github.com/harrylabsj/shein-shopping",
+  "keywords": [
+    "shein",
+    "shopping",
+    "fashion",
+    "browser-automation",
+    "ecommerce",
+    "fast-fashion"
+  ],
+  "category": "shopping",
+  "capabilities": [
+    "browser-automation",
+    "search",
+    "cart-operations",
+    "price-comparison",
+    "decision-support",
+    "python-runtime"
+  ],
+  "entry": "SKILL.md",
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "package.json",
+    "clawhub.json",
+    "shein-shopping.py",
+    "security.py",
+    "requirements.txt",
+    "references/fit-guide.md",
+    "references/output-patterns.md",
+    "references/browser-workflow.md"
+  ],
+  "openclaw": {
+    "minVersion": "1.0.0",
+    "skillType": "browser-commerce",
+    "features": {
+      "browserAutomation": true,
+      "userControlledPayment": true,
+      "loginOptional": true,
+      "pythonRuntime": true
+    }
+  }
+}
